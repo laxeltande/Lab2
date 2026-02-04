@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic Portal - Login</title>
+
+    <style>
+        /* simple css so it looks clean */
+        body { background-color: #f4f6fb; font-family: Arial, sans-serif; margin: 0; }
+        .topbar { background: white; padding: 16px 20px; border-bottom: 1px solid #ddd; }
+        .card { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 18px; max-width: 900px; margin: 28px auto; }
+        .small { color: #555; }
+        input { padding: 10px; width: 280px; border: 1px solid #bbb; border-radius: 8px; }
+        .btn { padding: 10px 14px; border: none; border-radius: 10px; background: #2563eb; color: white; font-weight: bold; cursor: pointer; }
+        .imgbox { text-align: center; margin-bottom: 12px; }
+        .imgbox img { width: 100%; max-width: 700px; border-radius: 12px; }
+    </style>
+</head>
+
+<body>
+
+    <!-- header bar -->
+    <div class="topbar">
+        <h2 style="margin:0;">Clinic Portal - Pharmacist Login</h2>
+    </div>
+
+    <div class="card">
+
+        <!-- adding a photo for aesthetics -->
+        <div class="imgbox">
+            <img src="images/pharm_prototype_lab2.jpg"
+            alt="Pharm_Prototype"
+            style="width: 100%; max-width: 350px; border-radius: 12px;">
+
+        </div>
+
+        <!-- simple form (table layout) -->
+        <center><h3>Login</h3></center>
+        <center><p class="small"><!-- demo portal for pharmacist only -->Use demo login to access prescriptions.</p></center>
+
+        <!-- goes to Login servlett -->
+        <form action="Login" method="post">
+            <table border="0" align="center" cellpadding="8" cellspacing="6">
+                <tr>
+                    <!-- keep names simple -->
+                    <td>Enter username :</td>
+                    <td><input type="text" name="username" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Enter password :</td>
+                    <td><input type="password" name="password" size="30" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="btn" type="submit" value="login"></td>
+                </tr>
+            </table>
+        </form>
+
+        <br>
+        <center class="small"><!-- hardcoded creds for prototype -->demo: <b>pharm</b> / <b>123</b></center>
+    </div>
+
+</body>
+</html>
